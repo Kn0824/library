@@ -58,7 +58,7 @@ body, html {
 }
 
 .books {
-    padding: 0 24px;
+    padding: 0 10vw;
     height: 100%;
     display: grid;
     gap: 24px;
@@ -68,7 +68,7 @@ body, html {
 
 .book {
     border: solid;
-    border-radius: 5px;
+    border-radius: 5%;
     height: 250px;
     width: 300px;
     display: flex;
@@ -87,8 +87,47 @@ body, html {
     border: none;
 }
 
+#bookForm {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    border: solid;
+    top: 18vh;
+    right: 31.5vw;
+    height: 50vh;
+    width: 33vw;
+    background-color: white;
+    padding: 2vh 2vw
+}
+
+#bookForm legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.title, .author, .pages, .readOrNot {
+    text-align: center;
+}
+
+.title input, .author input, .pages input {
+    width: 60%;
+    height: 24px;
+}
+
+#bookForm button {
+    width: 30%;
+    height: 10%;
+    align-self: center;
+}
+
 .read {
     background-color: rgb(0, 200, 0);
+}
+
+.unread {
+    background-color: rgb(200, 0 ,0);
 }
 
 .delete {
@@ -98,6 +137,11 @@ body, html {
 .read:hover {
     cursor: pointer;
     background-color: rgb(0, 150, 0);
+}
+
+.unread:hover {
+    cursor: pointer;
+    background-color: rgb(150, 0, 0);
 }
 
 .delete:hover {

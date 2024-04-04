@@ -24,6 +24,30 @@
         </div>
         <div class="copyright">Copyright &copy; 2024 kn0824</div>
     </div>
+    <form id="bookForm" action="code.js" method="post">
+        <legend>Input New Book Info</legend>
+        <div class="title">
+            <label for="bookTitle">Title:</label>
+            <input type="text" id="bookTitle" name="bookTitle" required>
+        </div>
+
+        <div class="author">
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" name="bookAuthor" required>
+        </div>
+
+        <div class="pages">
+            <label for="bookPages">Pages:</label>
+            <input type="number" min="1" id="bookPages" name="bookPages" required>
+        </div>
+
+        <div class="readOrNot">
+            <input type="checkbox" id="bookRead" name="bookRead">
+            <label for="bookRead">Have you read this book?</label>
+        </div>
+
+        <button type="submit">Done</button>
+    </form>
     <script src="code.js"></script>
 </body>
 </html>
